@@ -1,0 +1,166 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+.nav {
+    padding-top:20px;
+    padding-bottom:10px;
+    border-bottom:solid;
+    background-color:black;
+    border-color:#FFCC00; 
+    text-align:center;
+}
+
+#about {
+    background-color:#FFCC00;
+    height:600px;
+    width:100%;
+
+}
+
+#portfolio {
+    background-color:white;
+    height:600px;
+    width:100%;
+}
+
+#blog {
+    background-color:#FFCC00;
+    height:600px;
+    width:100%;
+}
+
+#contact {
+    background-color:white;
+    height:600px;
+    width:100%;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+ul {
+    display: inline;
+    list-style:none;
+    line-height:2em;
+    padding-right:25px;
+
+}
+
+a {
+    color:white
+}
+a:hover{
+    color:#FFCC00;
+    text-decoration:none;
+}
+
+.active{
+    color:#FFCC00;
+    text-decoration:none;
+    border-bottom:#FFCC00;
+
+}
+
+
+li {
+    padding:0 10px 0 50px;
+    font-family: 'Teko', sans-serif;
+    font-style:bold;
+    text-align:center;
+    display:inline;
+    font-size:16px;
+
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color:#FFF;
+    top: 5px;
+}
+
+
+/* Extra Things */
+
+
+
+/* Make the masthead heading the same height as the navigation */
+
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
