@@ -1,13 +1,72 @@
-$('li a').click(function(){
-  $('li').removeClass('active');
-  $(this).parent().addClass('active');
-});
+;(function ( $, window, document, undefined ) {
 
+  $.fn.rift = function () {
 
-$('a').click(function(e){
-    var targetOffset= $('#a').offset().top;
-    $('html, body').animate({scrollTop: targetOffset}, 1500);
-    e.preventDefault();   
+    return this.each(function () {
+      
+      // Vurribles
+      var element = $(this),
+          elemImg = element.find('img'),
+          imgSrc  = elemImg.attr('src');
+  
+      // We be chainin'  
+      element
+        .prepend('<span class="top-span"></span>')
+        .append('<span class="btm-span"></span>')
+        .find('span.top-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center top')
+        .css('background-size', '100%')
+        .parent()
+        .find('span.btm-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center bottom')
+        .css('background-size', '100%');
+    });
+  };
+})( jQuery, window, document );
+
+$('.rift-1').rift();
+
+;(function ( $, window, document, undefined ) {
+
+  $.fn.rift = function () {
+
+    return this.each(function () {
+      
+      // Vurribles
+      var element = $(this),
+          elemImg = element.find('img'),
+          imgSrc  = elemImg.attr('src');
+  
+      // We be chainin'  
+      element
+        .prepend('<span class="top-span"></span>')
+        .append('<span class="btm-span"></span>')
+        .find('span.top-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center top')
+        .css('background-size', '100%')
+        .parent()
+        .find('span.btm-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center bottom')
+        .css('background-size', '100%');
+    });
+  };
+})( jQuery, window, document );
+
+$('.rift-2').rift();
+
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 850, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
 });
 
 $(window).scroll(function() {
@@ -18,9 +77,8 @@ $(window).scroll(function() {
     }
 });
 $('#return-to-top').click(function() {      // When arrow is clicked
-    $('body, html').animate({
+    $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
-
 

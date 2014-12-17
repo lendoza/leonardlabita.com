@@ -1,9 +1,7 @@
 * {
     margin:0;
     padding:0;
-    -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */
@@ -149,6 +147,7 @@ body {
   height: 194px; /* Define height */
   position: relative; 
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-decoration:none;
   float:left;
@@ -184,9 +183,11 @@ body {
   z-index: 1;
   -webkit-transform: translate3d(0,0,0);
   /* Acceleration FTW */
-  -webkit-transition: transform .25s;
+  -webkit-transition: -webkit-transform .25s;
   -webkit-transition-duration: .25s;
+  -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+  -webkit-transform: .25s;
   transform: .25s;  /* Define anim. speed */
 }
 
@@ -208,6 +209,7 @@ body {
   height: 194px; /* Define height */
   position: relative; 
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-decoration:none;
   float:left;
@@ -242,10 +244,11 @@ body {
   position: absolute;
   left: 0;
   z-index: 1;
+  -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0); /* Acceleration FTW */
   transition: transform .25s;
   -webkit-transform: translate3d(0,0,0); /* Acceleration FTW */
-  -webkit-transition: transform .25s;
+  -webkit-transition: -webkit-transform .25s;
   -webkit-transition-duration: .25s;  /* Define anim. speed */
 }
 
@@ -422,14 +425,8 @@ user-select: none;
     height: 50px;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
     border-radius: 35px;
     display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index:1;
 }
@@ -439,10 +436,6 @@ user-select: none;
     position: relative;
     top: 13px;
     font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 #return-to-top:hover {
