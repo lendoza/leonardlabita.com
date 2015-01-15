@@ -1,0 +1,85 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+body {
+  background-color:#f8f8f8;
+}
+
+.header {
+  width:100%;
+  height:175px;
+}
+
+.header div {
+  display:inline-block;
+}
+
+.lightning-bolts1{
+  width:40%;
+  text-align:center;
+  float:left;
+  margin-top:50px;
+}
+
+.lightning-bolts2 {
+  width:40%;
+  text-align:center;
+  float:left;
+  margin-top:50px;
+
+}
+
+.logo {
+  text-align:center;
+  width:20%;
+  float:left;
+}
+
+.first-row {
+  width:100%;
+  height:187px;
+}
+
+.first-row div {
+  width:33%;
+  height:190px;
+  display:inline-block;
+  text-align:center;
+}
+.first-row h5{
+  text-align:center;
+}
+
+@media screen and (max-width: 875px){
+
+  #euler {
+    width:100%;
+    margin-top:10px;
+  }
+
+  #youtube-page {
+    width:100%;
+    margin-top:10px;
+  }
+
+  #sketchpad-picture {
+    width:100%;
+    margin-top:10px;
+  }
+}
+@media screen and (max-width: 700px){
+  .lightning-bolts1 img {
+    display:none;
+  }
+
+  .lightning-bolts2 img {
+    display:none;
+  }
+  .logo {
+    width:100%;
+    margin-top:0
+  }
+}

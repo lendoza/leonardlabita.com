@@ -1,0 +1,42 @@
+#header {
+  background-color:black;
+  height:50px;
+}
+#logo {
+  float:left;
+}
+#logo p {
+  padding-top:10px;
+  padding-left:10px;
+  color:white;
+  font-size:24px;
+}
+
+#options {
+  width:475px;
+  height:25px;
+  margin:auto;
+  padding-top:15px;
+}
+
+#options span {
+  display:inline-block;
+  margin-left:5px;
+}
+.square {
+  background-color: black;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#sketchpad {
+  height: 500px;
+  width: 500px;
+  margin:20px auto;
+
+}
+.clear {
+  margin-left:85px;
+}
