@@ -38,38 +38,39 @@ body {
   float:left;
 }
 
-.first-row {
+.portfolio {
   width:100%;
-  height:187px;
+  height:100%;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.first-row div {
-  width:33%;
-  height:190px;
-  display:inline-block;
+.portfolio div {
+  width:200px;
+  height:200px;
+  text-align:center;
+  -webkit-flex-wrap: wrap;
+}
+
+#youtube-page{
+  padding-top:100px;
+}
+
+#mint {
+  padding-top:93px;
+}
+
+.portfolio h5{
   text-align:center;
 }
-.first-row h5{
-  text-align:center;
-}
 
-@media screen and (max-width: 875px){
-
-  #euler {
-    width:100%;
-    margin-top:10px;
-  }
-
-  #youtube-page {
-    width:100%;
-    margin-top:10px;
-  }
-
-  #sketchpad-picture {
-    width:100%;
-    margin-top:10px;
-  }
-}
 @media screen and (max-width: 700px){
   .lightning-bolts1 img {
     display:none;
@@ -78,8 +79,16 @@ body {
   .lightning-bolts2 img {
     display:none;
   }
+  
   .logo {
     width:100%;
-    margin-top:0
+    margin-top:0;
   }
+}
+
+@media screen and (max-width:404.25px){
+  #sketchpad-picture {
+    margin-top:65px;
+  }
+  
 }
