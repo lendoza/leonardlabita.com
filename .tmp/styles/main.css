@@ -355,7 +355,7 @@ body {
 
 #services-content {
   width:1000px;
-  height:400px;
+  height:425px;
   margin:auto;
 
 }
@@ -687,6 +687,6 @@ user-select: none;
   }
 
   #services {
-    height:1125px;
+    height:1150px;
   }
 }
