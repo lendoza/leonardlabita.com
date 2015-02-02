@@ -90,12 +90,17 @@ body {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-#row-2 div{
-  padding-top:20px;
-}
+
 
 #youtube-page{
-  padding-top:100px;
+  padding-top:120px;
+}
+
+#euler, #sketchpad-picture {
+  padding-top:20px;
+}
+#smashing{
+  padding-top:120px;
 }
 #times{
   padding-top:42px;
@@ -119,6 +124,9 @@ body {
   
   #logo {
     width:100%;
+  }
+  #youtube-page{
+    padding-top:123px;
   }
 }
 
