@@ -91,7 +91,21 @@ body {
   justify-content: space-around;
 }
 
-
+#row-3{
+  width:100%;
+  height:100%;
+  -ms-box-orient: horizontal;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+#next{
+  padding-top:93px;
+}
 #youtube-page{
   padding-top:120px;
 }
@@ -106,7 +120,7 @@ body {
   padding-top:42px;
 }
 #mint {
-  padding-top:105px;
+  padding-top:120px;
 }
 
 .portfolio h5{
