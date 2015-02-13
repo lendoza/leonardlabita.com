@@ -6,3 +6,14 @@ $(document).ready(function(){
     });
   });
 });
+
+var sticky = $('#stream').offset().top;
+$(document).scroll(function() {
+    var scroll = $(this).scrollTop();
+    if (scroll > sticky) {
+      $('#stream').addClass('sticky');
+    }
+    else {
+        $('#stream').removeClass('sticky');
+    }
+});
