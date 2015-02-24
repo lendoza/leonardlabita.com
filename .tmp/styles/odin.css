@@ -56,16 +56,18 @@ body {
     justify-content: space-around;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    overflow:hidden;
 }
 
 .portfolio div {
   width:200px;
-  height:300px;
+  height:250px;
   text-align:center;
 }
 #row-1{
   width:100%;
   height:100%;
+  margin-top:3em;
   -ms-box-orient: horizontal;
   display: -moz-flex;
   display: -webkit-flex;
@@ -76,6 +78,9 @@ body {
   -webkit-flex-flow: row wrap;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+}
+#row1 div {
+  margin-right:3em;
 }
 
 #row-2{
@@ -90,43 +95,17 @@ body {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-
-#row-3{
-  width:100%;
-  height:100%;
-  -ms-box-orient: horizontal;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-}
-#next{
-  padding-top:93px;
-}
-#youtube-page{
-  padding-top:120px;
-}
-
-#euler, #sketchpad-picture {
-  padding-top:20px;
-}
-#smashing{
-  padding-top:120px;
-}
-#times{
-  padding-top:42px;
-}
-#mint {
-  padding-top:120px;
+#row-2 div{
+  margin-left:1em;
 }
 
 .portfolio h5{
   text-align:center;
+  padding-top:1em;
 }
-
+#times {
+  padding-top:35px;
+}
 @media screen and (max-width: 700px){
   #lightning-bolts1 {
     display:none;
@@ -135,17 +114,17 @@ body {
   #lightning-bolts2 {
     display:none;
   }
-  
   #logo {
     width:100%;
-  }
-  #youtube-page{
-    padding-top:123px;
   }
 }
 
 @media screen and (max-width:404.25px){
-  .portfolio div {
+  #row-1 div {
     margin:auto;
-  }  
+  }
+  #row-2 div{
+    margin:auto;
+  }
+
 }

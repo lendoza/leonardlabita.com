@@ -504,6 +504,7 @@ body{
 	float:left;
 	margin-top:1em;
 	background-color:#FFF;
+	border:1px solid #FFF;
 }
 
 #second-main-stories img{
@@ -623,7 +624,7 @@ body{
 }
 @media screen and (max-width:727px){
 	#main-list{
-		width:35%;
+		width:8.15em;
 	}
 	ul #blog{
 		display:none;
@@ -700,7 +701,16 @@ body{
 	}
 }
 @media screen and (max-width:493px){
+	#logo{
+		margin-right:0;
+	}
+	#social i {
+		margin-right:.25em;
+	}
+	#social li{
+		margin-right:0;
+	}
 	#social {
-		width:15em;
+		width:11em;
 	}
 }
