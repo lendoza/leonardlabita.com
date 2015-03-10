@@ -37,6 +37,7 @@ html{
 
 .buttons li {
   display:inline-block;
+  display:-moz-inline-box;
   cursor:pointer;
 
 }
@@ -134,6 +135,7 @@ html{
 }
 .user-stuff li {
   display:inline-block;
+  display:-moz-inline-box;
   cursor:pointer;
 }
 
@@ -187,6 +189,7 @@ html{
 
 .similar-stories li{
   display:inline-block;
+  display:-moz-inline-box;
   width:280px;
   font-size:12px;
   font-size:.85em;

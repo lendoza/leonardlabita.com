@@ -2,10 +2,11 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>The Odin Project Portfolio</title>
+    <title>Calculator.js</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,600,700' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -13,7 +14,9 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/odin.css">
+    <link rel="stylesheet" href="styles/calculator.css">
+    <link rel="stylesheet" href="styles/reset.css">
+
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -23,91 +26,41 @@
 <body>
 <!--[if lt IE 10]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-
-<div class="header">
-
-    <div id="lightning-bolts1">
-        <img src="images/odinimages/lightning-bolts.png"/>
-    </div>
-
-    <div id ="logo">
-        <img src="images/odinimages/odin.png"/>
-            <h5>The Odin Project Portfolio</h5>
-            <p>By Leonard Labita</p>
-    </div>
-
-    <div id ="lightning-bolts2">
-        <img src ="images/odinimages/lightning-bolts.png"/>
-    </div>
+<![endif]--> 
+<div class ="header">
+    
+    <div id ="logo">JavaScript Calculator</div>
 
 </div>
 
-<div class = "wrapper">
-
-    <div class ="portfolio">
-
-        <div id="row-1">
-
-            <div id ="calculator">
-                <a href ="calculator.html"><img src ="images/odinimages/calculator.png"/></a>
-                <h5>Calculator App</h5>
-                <p>JavaScript</p>
-            </div>
-
-        </div>
+<div class ="calculator">
     
-        <div id="row-2">
-
-            <div id ="newsweek">
-                <a href ="newsweek.html"><img src ="images/odinimages/Newsweek.png"/></a>
-                <h5>Newsweek Front Page</h5>
-                <p>Twitter Bootstrap</p>
-            </div> 
-
-            <div id ="next">
-                <a href ="next.html"><img src ="images/odinimages/TheNextWeb.png"/></a>
-                <h5>The Next Web Front Page</h5>
-                <p>Responsive Design</p>
-            </div> 
-            
-            <div id ="smashing">
-                <a href="smashing.html"><img src="images/odinimages/smashing.png"/></a>
-                <h5>Smashing Front Page</h5>
-                <p>HTML/CSS</p>
-            </div>
-
-            
-
-        </div>
+    <div class ="screen">0</div>
     
-
-        <div id="row-3">
-
-            <div id ="times">
-                <a href="times.html"><img src="images/odinimages/odintimes.png"/></a>
-                <h5>NY Times Article</h5>
-                <p>HTML/CSS</p>
-            </div>
-
-            <div id ="mint">
-                <a href ="mint.html"><img src ="images/odinimages/mintportfolio.png"/></a>
-                <h5>Mint Sign-Up Form</h5>
-                <p>HTML/CSS</p>
-            </div> 
-
-            <div id ="youtube-page">
-                    <a href="youtube.html"><img src="images/odinimages/youtubeportfolio.png"/></a>
-                    <h5>Youtube Clone Page</h5>
-                    <p>HTML/CSS</p>
-            </div>
-
-        </div>
-
+    <div class ="keypad">
+            <div class ="key ms">mrc</div>
+            <div class ="key ms">m-</div>
+            <div class ="key ms">m+</div>
+            <div class ="key operator">÷</div>
+            <div class ="key numpad">7</div>
+            <div class ="key numpad ">8</div>
+            <div class ="key numpad">9</div>
+            <div class ="key operator">+</div>
+            <div class ="key numpad">4</div>
+            <div class ="key numpad">5</div>
+            <div class ="key numpad">6</div>
+            <div class ="key operator">x</div>
+            <div class ="key numpad">1</div>
+            <div class ="key numpad">2</div>
+            <div class ="key numpad">3</div>
+            <div class ="key operator">-</div>
+            <div class ="key numpad">0</div>
+            <div class ="key numpad">.</div>
+            <div class ="key numpad clear">c</div>
+            <div class ="key equal">=</div>
     </div>
-
-</div>   
+    
+</div>  
 
 
 <!-- build:js(.) scripts/vendor.js -->
@@ -142,7 +95,7 @@
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
-<script src="scripts/main.js"></script>
+<script src="scripts/calculator.js"></script>
 <!-- endbuild -->
 </body>
 </html>

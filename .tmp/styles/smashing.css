@@ -98,11 +98,13 @@ img {
 
 .books:hover {
   background-color:#ff6;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 
 .ebooks:hover{
   background-color:#ff6;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
   background-image:url(../images/smashingimages/navilittlebook.png);
   background-repeat:no-repeat;
@@ -125,6 +127,7 @@ img {
 
 #main2 a:hover{
   background-color:#ff6;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 
@@ -176,6 +179,7 @@ img {
 
 .technologies li:hover{
   background-color:#ff6;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 #menu-coding {
@@ -183,6 +187,7 @@ img {
 }
 #menu-coding:hover{
   border-bottom:.3125em solid #63BFB2;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 
@@ -192,6 +197,7 @@ img {
 
 #menu-design:hover{
   border-bottom:.3125em solid #6ECE0A;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 
@@ -200,6 +206,7 @@ img {
 }
 #menu-mobile:hover{
   border-bottom:.3125em solid #EBD203;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 
@@ -209,6 +216,7 @@ img {
 
 #menu-graphics:hover {
   border-bottom:.3125em solid #A878A4;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 #menu-ux{
@@ -216,6 +224,7 @@ img {
 }
 #menu-ux:hover{
   border-bottom:.3125em solid #F0717C;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 
@@ -225,6 +234,7 @@ img {
 
 #menu-wordpress:hover{
   border-bottom:.3125em solid #3E8DD2;
+  -webkit-transition: color .3s,background-color .3s;
   transition: color .3s,background-color .3s;
 }
 
@@ -641,6 +651,7 @@ img {
   list-style-type:none;
   display:inline-block;
   text-align:center;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -656,6 +667,8 @@ img {
   list-style-type:none;
   padding: .25em .5em;
   color: #fff;
+  background: -webkit-linear-gradient(#e85c33 0%, #e53a2b 100%);
+  background: -o-linear-gradient(#e85c33 0%, #e53a2b 100%);
   background: linear-gradient(#e85c33 0%, #e53a2b 100%);
   border-radius: .25em;
 }
@@ -665,6 +678,7 @@ img {
   bottom: 1.17em;
   color: rgba(0,0,0,.4);
   position:absolute;
+  -webkit-transition: all .3s;
   transition: all .3s;
   font-size: .9em;
   border-bottom: .08em solid #e5e5e5;
@@ -766,7 +780,10 @@ footer div {
   padding: 0 1%;
   border-left: 0;
   border-radius:0 .5em .5em 0;
+  background: -webkit-linear-gradient(#e85c33 0%, #e53a2b 100%);
+  background: -o-linear-gradient(#e85c33 0%, #e53a2b 100%);
   background: linear-gradient(#e85c33 0%, #e53a2b 100%);
+  -webkit-transition: border-color .3s;
   transition: border-color .3s;
   float:left;
 }
@@ -792,6 +809,7 @@ footer div {
   border: .08em solid rgba(0,0,0,.1);
   background-color: #fff;
   border-radius: .5em 0 0 .5em;
+  -webkit-transition: all .3s;
   transition: all .3s;
   font-style:normal;
   font-weight:400;
@@ -846,7 +864,10 @@ footer div {
   padding: 0 1%;
   border-left: 0;
   border-radius:0 .5em .5em 0;
+  background: -webkit-linear-gradient(#e85c33 0%, #e53a2b 100%);
+  background: -o-linear-gradient(#e85c33 0%, #e53a2b 100%);
   background: linear-gradient(#e85c33 0%, #e53a2b 100%);
+  -webkit-transition: border-color .3s;
   transition: border-color .3s;
   float:left;
 }
@@ -864,6 +885,7 @@ footer div {
   border: .08em solid rgba(0,0,0,.1);
   background-color: #fff;
   border-radius: .5em 0 0 .5em;
+  -webkit-transition: all .3s;
   transition: all .3s;
   font-style:normal;
   font-weight:400;

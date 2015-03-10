@@ -151,7 +151,7 @@ img{
 	display: block;
 	width: 25px;
 	height: 25px;
-	background:url(../images/newsweekimages/sprite-hi.png) -89px 0; no-repeat;
+	background:url(../images/newsweekimages/sprite-hi.png) -89px 0 no-repeat;
 	background-size: 512px;
 	position: relative;
 	z-index: 1;
@@ -996,13 +996,15 @@ aside>div{
 	.content-bottom{
 		max-width:100%;
 	}
-}      
+}
+
 @media screen and (max-width:768px){
 	.inner-wrap{
 		padding-left:0;
 		border-left:0;
 		padding-top:5px;
 	}
+
 }
 
 @media screen and (max-width:767px){
@@ -1033,26 +1035,30 @@ aside>div{
 	font-weight:300;
 	color: #000;
 	}
+
+	div.footer-menu.col-md-12.col-sm-12{
+		padding:0;
+	}
+
 	.footer-menu {
 		background-color: #ebebeb;
 		height:18.5em;
 		clear:both;
 		padding-top:0;
 	}
+
 	.menu-wrap {
 		background-color: #ebebeb;
 		margin-top:0;
 	}
 	.footer-menu ul{
-		margin-left: -10px;
-		margin-right: -10px;
 		padding:0;
 	}	
 	.footer-menu li{
 	float: left;
 	width: 50%;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	text-align: center;
 	background-color: #ebebeb;
 	}
@@ -1075,11 +1081,12 @@ aside>div{
 	width:100%;
 	clear:both;
 	background-color:red;
-	margin:0;
 	}
 	.footer-menu li:before{
 	content: "";
 	padding: 0;
+	}
+
 }
 
 @media screen and (max-width:426px){
@@ -1089,5 +1096,6 @@ aside>div{
 	.hidden-nav {
 		margin-right:2.5px;
 	}
+
 }
 
