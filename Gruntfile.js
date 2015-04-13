@@ -29,6 +29,7 @@ module.exports = function (grunt) {
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
+
             bower: {
                 files: ['bower.json'],
                 tasks: ['bowerInstall']
@@ -60,9 +61,27 @@ module.exports = function (grunt) {
                     '.tmp/styles/{,*/}*.css',
                     '<%= config.app %>/images/{,*/}*'
                 ]
+            },
+            sass: {
+                files: "app/styles/sass/*.scss",
+                tasks: ['sass']
             }
+        
+            
         },
 
+        sass: {                              // Task
+                dist: {                            // Target
+                options: {                       // Target options
+                    style: 'expanded'
+                    },
+                files: {                         // Dictionary of files
+                    'app/styles/main.css': 'app/styles/sass/main.scss'      // 'destination': 'source'
+                    }
+                }
+        },
+
+        
         // The actual grunt server settings
         connect: {
             options: {
@@ -336,7 +355,6 @@ module.exports = function (grunt) {
         }
     });
 
-
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -383,7 +401,7 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        'htmlmin'
+        'htmlmin',
     ]);
 
     grunt.registerTask('default', [
@@ -391,4 +409,8 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+grunt.loadNpmTasks('grunt-contrib-sass');
+
+grunt.registerTask('default', ['sass']);
+
 };
