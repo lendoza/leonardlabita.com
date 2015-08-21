@@ -64,16 +64,17 @@ body {
   margin-left:3em;
   padding-top:1em;
   font-family:$quattro;
+  
   li{
   padding:.5em;
-
-  a{
-  color:#FFF;
-  padding-left:.5em;
-  cursor:pointer;
-  font-weight:700;
   }
-  }
+    
+    li a{
+    color:#FFF;
+    padding-left:.5em;
+    cursor:pointer;
+    font-weight:700;
+    }
 }
   
 .side-panel {
@@ -260,7 +261,6 @@ body {
   margin-right:2em;
   border-bottom: 1px solid #DDD;
 
-
   h2{
     font-family:$oswald;
     color:$main-color;
@@ -274,10 +274,14 @@ body {
     padding-left:.3em;
     padding-top:.35em;
   }
-  p{
+  ul{
+    list-style-type:disc;
+    padding-left:1em;
+  }
+  li{
     font-family:$quattro;
     font-size:1em;
-    padding-top:.5em;
+    padding-top:.25em;
   }
 
   div{
@@ -339,6 +343,12 @@ body {
   line-height:1.5em;
   margin-right:2em;
   border-bottom: 1px solid #DDD;
+
+  a{
+    color:$main-color;
+    padding-left:.5em;
+    font-weight:700;
+  }
 
 
   h2{

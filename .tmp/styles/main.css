@@ -291,7 +291,11 @@ body {
   padding-left: .3em;
   padding-top: .35em;
 }
-.work-description p {
+.work-description ul {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+.work-description li {
   font-family: "Quattrocento", sans-serif;
   font-size: 1em;
   padding-top: .5em;
@@ -351,6 +355,11 @@ body {
   line-height: 1.5em;
   margin-right: 2em;
   border-bottom: 1px solid #DDD;
+}
+.education-description a {
+  color: #0B99BC;
+  padding-left: .5em;
+  font-weight: 700;
 }
 .education-description h2 {
   font-family: "Oswald", sans-serif;
