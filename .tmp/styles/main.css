@@ -179,6 +179,19 @@ body {
   padding: 1.5em;
 }
 
+.freeCodeCamp {
+  width: 100%;
+  float: left;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.freeCodeCamp div {
+  width: 16.5em;
+  display: inline-block;
+  padding: 1.5em;
+}
+
 .odin-project {
   width: 100%;
   height: auto;
@@ -195,18 +208,6 @@ body {
   width: 16.5em;
   display: inline-block;
   padding: 1.5em;
-}
-
-.javascript-apps {
-  width: 100%;
-  float: left;
-  height: auto;
-  text-align: center;
-}
-
-.javascript-apps div {
-  padding: 1.5em;
-  float: left;
 }
 
 /* RESUME STYLING */
@@ -298,7 +299,7 @@ body {
 .work-description li {
   font-family: "Quattrocento", sans-serif;
   font-size: 1em;
-  padding-top: .5em;
+  padding-top: .25em;
 }
 .work-description div {
   padding-bottom: 1em;
@@ -440,6 +441,11 @@ body {
   padding-left: 1em;
   font-family: "Quattrocento", sans-serif;
   width: 100%;
+}
+.interests-description a {
+  color: #0B99BC;
+  font-family: "Quattrocento", sans-serif;
+  font-weight: 700;
 }
 
 @media all and (max-width: 957px) {
