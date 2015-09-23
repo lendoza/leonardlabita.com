@@ -1,0 +1,97 @@
+body {
+  background: #222;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#main-heading {
+  text-align: center;
+  color: white;
+  font-family: Pacifico, serif;
+  font-size: 4em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.outer {
+    display: table;
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05b68', endColorstr='#e73827', GradientType=0 );
+}
+
+.inner {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 96%;
+    height: 96%;
+    border-radius: 50%;
+    background: rgba(116,207,122,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 20%, rgba(79,171,74,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(116,207,122,1)), color-stop(0%, rgba(116,207,122,1)), color-stop(20%, rgba(116,207,122,1)), color-stop(100%, rgba(79,171,74,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 20%, rgba(79,171,74,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 20%, rgba(79,171,74,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 20%, rgba(79,171,74,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 0%, rgba(116,207,122,1) 20%, rgba(79,171,74,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cf7a', endColorstr='#4fab4a', GradientType=1 );
+}
+
+.clock-time {
+  font-size: 5em;
+  color: white;
+  
+}
+
+.clock-text {
+  font-size: 2.5em;
+  color: white;
+}
+
+.clock-image {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.button-container {
+  color: white;
+  text-align: center;
+  width:100%;
+  margin-top: 30px;
+}
+
+.break, .start, .length{
+  width:33.33%;
+  float:left;
+}
+
+.button-heading {
+  font-size: 18px;
+}
+.fa {
+  cursor: pointer;
+  color:white;
+}
+.time {
+  padding: 0 10px;
+  font-size: 2.5em;
+}
+.start {
+  margin-top: 15px;
+}
