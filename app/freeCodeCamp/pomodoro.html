@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
   </head>
@@ -30,6 +30,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
   <h1 id="main-heading">Pomodoro Clock</h1>
+
   <div class="outer">
     <div class="middle">
       <div class="inner">
@@ -51,20 +52,22 @@
         <button class="ctrl btn btn-success btn-lg">Start</button>
     </div>
 
-   <div class = "length">
+    <div class = "length">
        <span class="button-heading">Session Length</span>
        <p><button class="session-min"><i class="fa fa-minus"></i></button><span class="time session-time">25</span><button class="session-plus"><i class="fa fa-plus"></i></button></p>   
-   </div>
+    </div>
 
-   <audio loop = "loop" preload = "auto" id = "ticking">
+    <audio loop = "loop" preload = "auto" id = "ticking">
         <source src="http://www.soundjay.com/clock/sounds/clock-ticking-2.mp3">
         Your browser does not support the audio element.
-   </audio>
+    </audio>
 
-   <audio id = "alarm">
+    <audio id = "alarm">
         <source src="http://www.soundjay.com/clock/sounds/alarm-clock-01.mp3">
         Your browser does not support the audio element.
-   </audio>
+    </audio>
+
+  </div>
 
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->

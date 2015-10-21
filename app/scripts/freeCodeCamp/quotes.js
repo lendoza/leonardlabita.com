@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$(function(){
     	var $random = $("#random li");
     	$('.generator').click(function(){
@@ -7,4 +8,5 @@ $(document).ready(function(){
         	return false;
     	}).triggerHandler('click');
 	});
+	
 });

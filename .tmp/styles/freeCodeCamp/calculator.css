@@ -1,0 +1,92 @@
+body {
+    background-color:#D8E5E5;
+}
+.header {
+    background-color:#550679;
+    width:100%;
+    height:4em;
+    font-family:'Open Sans', sans-serif;
+    font-weight:700;
+}
+#logo{
+    padding-top:.75em;
+    font-size:1.5em;
+    color:white;
+    padding-left:1em;
+}
+.calculator {
+    margin:5em auto;
+    width:17em;
+    height:18.5em;
+    background-color:#393E3D;
+    border-radius:3px;
+    padding-top:.75em;
+    font-family:'Open Sans', sans-serif;
+    font-weight:400;
+}
+
+.screen{
+    width:14.5em;
+    height:3em;
+    border:5px solid;
+    margin: 1em auto;
+    background-image: -ms-linear-gradient(top, #D3E6A7 0%, #D0FF1A 100%);
+    background-image: -moz-linear-gradient(top, #D3E6A7 0%, #D0FF1A 100%);
+    background-image: -o-linear-gradient(top, #D3E6A7 0%, #D0FF1A 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D3E6A7), color-stop(1, #D0FF1A));
+    background-image: -webkit-linear-gradient(top, #D3E6A7 0%, #D0FF1A 100%);
+    background-image: linear-gradient(to bottom, #D3E6A7 0%, #D0FF1A 100%);
+    border-radius:2px;
+    text-align:right;
+    line-height:2.5em;
+    padding-right:.5em;
+
+}
+
+.keypad {
+    width:16.5em;
+    height:13em;
+    padding-left:1.6em;
+}
+
+.key {
+    width:3em;
+    height:1.75em;
+    border:1.5px solid black;
+    margin-top:.5em;
+    border-radius:3px;
+    color:white;
+    float:left;
+    text-align:center;
+    margin-right:.62em;
+    line-height:1.5em;
+    cursor:pointer;
+}
+
+.ms{
+    background-image: -moz-linear-gradient(top, #757575 0%, #4A4A4A 100%);
+    background-image: -o-linear-gradient(top, #757575 0%, #4A4A4A 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #757575), color-stop(1, #4A4A4A));
+}
+.operator {
+    background-color:#ee0579;
+}
+
+.numpad {
+    background-image: -moz-linear-gradient(top, #000000 0%, #303030 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), color-stop(1, #303030));
+}
+
+.equal {
+    background-color:orange;
+}
+
+@media screen and (max-width:545px){
+    .header{
+        text-align:center;
+    }
+    #logo {
+        padding-left:0;
+    }
+}
+
