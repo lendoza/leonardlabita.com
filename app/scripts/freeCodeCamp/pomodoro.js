@@ -161,6 +161,6 @@ $(document).ready(function(){
 		    alarm.play();
 		}
 
-	})()
+	})();
 
 });

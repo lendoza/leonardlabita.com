@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     var injectStreamerData = function(streams){
     	var streamerId, channelsURL, streamsURL;
-    	for (var i=0; i < streams.length; i++) {
+    	for (var i = 0; i < streams.length; i++) {
         		(function(i) {
           		streamerId = streams[i];
           		channelsURL = 'https://api.twitch.tv/kraken/channels/' + streamerId + '?callback=?';

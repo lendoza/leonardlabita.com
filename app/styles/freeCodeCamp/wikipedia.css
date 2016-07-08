@@ -1,0 +1,62 @@
+.wiki-search{
+    width:40em;
+    margin:auto;
+    text-align:center;
+
+}
+
+.wiki-results{
+  width:90%;
+  text-align:center;
+  margin:auto;
+}
+
+input[type=search]{
+    width:20em;
+}
+
+.buttons{
+    margin-top:.75em;
+}
+
+.fa-question-circle-o{
+  margin-right:15px;
+}
+
+.result {
+  display: block;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.result:hover {
+  text-decoration: none;
+  top: 1px;
+  left: 1px;
+}
+
+.card{
+  display:inline-block;
+  width:45%;
+  margin:1em;
+}
+
+.card-title a{
+  color:#26a69a;
+}
+
+#articles{
+  margin-top:2em;
+}
+
+@media screen and (max-width:640px){
+  .card{
+    width:90%;
+  }
+}
+
+@media screen and (max-width:560px){
+    .wiki-search{
+        width:25em;
+    }
+}

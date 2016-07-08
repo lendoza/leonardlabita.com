@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leonard Labita | Wikipedia Viewer</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!--Materialize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="../styles/freeCodeCamp/wikipedia.css">
+
+</head>
+
+<body>
+    <div class ="wiki-search">
+        <h1>Wikipedia Search</h1>
+
+        <div class ="search-box">
+            
+            <input id ="search" type="search" placeholder="Search..."/>
+            
+            <div class ="buttons">
+                <button id="search-button" class="btn waves-effect waves-light">Search
+    <i class="material-icons left">search</i></button>
+                <a href="https://en.wikipedia.org/wiki/Special:Random"><button class="btn waves-effect waves-light indigo darken-4"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Random</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class ="wiki-results">
+
+        <div id ="wiki-row" class ="row">
+            <div id = "wiki-cards">
+                <div id="articles"></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--Vendor JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+    <!--Main JS-->
+    <script src="../scripts/freeCodeCamp/wikipedia.js"></script>
+
+</body>
+</html>
