@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  $('input, select, textarea').on('focus blur', function(event) {
+    $('meta[name=viewport]').attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
+  });
+
   var Wiki = (function(){
  
     var wikiURL = 'https://en.wikipedia.org/wiki/';

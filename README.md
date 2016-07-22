@@ -1,7 +1,17 @@
 leonardlabita.com
-=======
-My personal homepage where I talk a little about myself and display my completed projects.
+======
+**leonardlabita.com** is my portfolio website. Here I display all of my projects and highlight my qualifications as a Web Developer. It is updated regularly as I add new technologies to my skillset.
 
-This site uses a responsive design and works on modern browsers.
+## Technology
+* HTML5
+* CSS3
+* Bootstrap
+* Javascript
+* Jquery
 
-It is updated regularly as I hone my skills and complete more projects.
+## Contact
+
+* Homepage: http://leonardlabita.com
+* e-mail: labita.leonard@gmail.com
+* Instagram: https://instagram.com/lendoza
+

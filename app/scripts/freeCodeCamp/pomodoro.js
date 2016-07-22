@@ -11,11 +11,9 @@ $(document).ready(function(){
 	  	var interval;
 
 	  	// Cache DOM
-	  	var $al = $(".inner");
-		var $clock_time = $al.find(".clock-time");
-		var $clock_text = $al.find(".clock-text");
-		var $middle = $al.find(".middle");
-		var $el = $(".button-container");
+		var $el = $("#clock-container");
+		var $clock_time = $el.find(".clock-time");
+		var $clock_text = $el.find(".clock-text");
 		var $ctrl = $el.find(".ctrl");
 		var $break_time = $el.find(".break-time");
 		var $break_plus = $el.find(".break-plus");
@@ -43,10 +41,10 @@ $(document).ready(function(){
 		        	clock_min = break_len;
 		        	updateTime();
 		        	playAlarm();
+		        	// $('.ctrl').addClass('hvr-buzz');
 		      	}
 		      	else {
 		        	isStop = true;
-		        	updateCtrlButton();
 		        	$(".clock-text").text("Session");
 		        	clock_min = session_len;
 		        	updateTime();
@@ -62,19 +60,16 @@ $(document).ready(function(){
 
 		function startStop(){
 			isStop = !isStop;
-		    updateCtrlButton();
 		    if(!isStop) {
 		      	interval = setInterval(startClock, 1000);
 		      	playTicking();
 		    }
 		    else {
 		      	isStop = true;
-		      	updateCtrlButton();
 		     	$(".clock-text").text("Session");
 		      	clock_min = session_len;
 		      	clock_sec = 0;
 		      	updateTime();
-		      	$(".middle").css("background" , "linear-gradient(to bottom, rgba(255,255,255,1) 100%, rgba(254,51,50,1) 0%, rgba(254,51,50,1) 0%)");
 		      	clearInterval(interval);
 		      	pauseTicking();
 		   	}
@@ -125,29 +120,13 @@ $(document).ready(function(){
 		    }
 		}
 
-		function updateCtrlButton(){
-			if(isStop) {
-		      	$(".ctrl").removeClass("btn-danger");
-		      	$(".ctrl").addClass("btn-success");
-		      	$(".ctrl").text("Start");
-		    }
-		    else {
-		      	$(".ctrl").removeClass("btn-success");
-		      	$(".ctrl").addClass("btn-danger");
-		      	$(".ctrl").text("Stop");
-		    }
-		}
-
-		function fillCircle(){
-			var total_sec = ($(".clock-text").text() === "Session") ? session_len * 60 : break_len * 60;
-		    var current_sec = (clock_min) * 60 + clock_sec;
-		    var percentage = (current_sec/total_sec) * 100;
-		    $(".middle").css("background" , "linear-gradient(to bottom, rgba(255,255,255,1) "+percentage+"%, rgba(254,51,50,1) 0%, rgba(254,51,50,1) 0%)");
-		}
-
 		function playTicking(){
 			var ticking = document.getElementById("ticking");
-		    ticking.play();
+			var buffer = .44
+			if(currentTime > duration - buffer){
+				currentTime = 0;
+				ticking.play();
+			}
 		}
 
 		function pauseTicking(){

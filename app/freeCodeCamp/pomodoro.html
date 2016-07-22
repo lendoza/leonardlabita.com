@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../styles/freeCodeCamp/pomodoro.css">
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -29,45 +29,92 @@
     <![endif]-->
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-  <h1 id="main-heading">Pomodoro Clock</h1>
+  <div class="pomodoro-container">
 
-  <div class="outer">
-    <div class="middle">
-      <div class="inner">
-        <img class="clock-image" src="http://www.cliparthut.com/clip-arts/168/tomato-clip-art-168823.png" alt="Logo"/>
-        <p class="clock-text">Session</p>
-        <span class="clock-time">25:00</span>
+    <div id="clock-container">
+
+      <h1>Pomodoro Clock</h1>
+
+      <div id="pomodoro-clock">
+        <img class="ctrl hvr-grow" src="../images/freeCodeCamp/pomodoro/pomodoro.png"/>
       </div>
+
+      <div id="time">
+
+          <div id="break" class="break-length">
+
+              <h3>Break Length</h3>
+
+              <button class="break-min hvr-grow"><i class="fa fa-minus"></i></button>
+
+              <span class="time break-time">5</span>
+
+              <button class="break-plus hvr-grow"><i class="fa fa-plus"></i></button>
+
+          </div>
+
+          <div id="clock-time-wrapper">
+            <h3 class="clock-text">Session</h3>
+            <span class="clock-time">25:00</span>
+          </div>
+
+          <div id ="length" class="break-length">
+
+             <h3>Session Length</h3>
+
+             <button class="session-min hvr-grow"><i class="fa fa-minus"></i></button>
+
+             <span class="time session-time">25</span>
+             <button class="session-plus hvr-grow"><i class="fa fa-plus"></i></button>  
+
+          </div>
+
+      </div>
+
     </div>
-  </div>
 
-  <div class = "button-container">
+    <!-- <div id="button-container">
 
-    <div class = "break">
-        <span class="button-heading">Break Length</span>
-        <p><button class="break-min"><i class="fa fa-minus"></i></button><span class="time break-time">5</span><button class="break-plus"><i class="fa fa-plus"></i></button></p>
+      <div id="break-session">
+
+        <div class ="break">
+
+            <h3 class="button-heading">Break Length</h3>
+
+            <button class="break-min hvr-grow"><i class="fa fa-minus"></i></button>
+
+            <span class="time break-time">5</span>
+
+            <button class="break-plus hvr-grow"><i class="fa fa-plus"></i></button>
+
+        </div>
+
+        <div class ="start">
+            <button class="ctrl btn btn-success btn-lg">Start</button>
+        </div>
+
+        <div class ="length">
+           <h3 class="button-heading">Session Length</h3>
+           <button class="session-min hvr-grow"><i class="fa fa-minus"></i></button>
+           <span class="time session-time">25</span>
+           <button class="session-plus hvr-grow"><i class="fa fa-plus"></i></button>   
+        </div>
+
+      </div>
+
+    </div> -->
+
+      <audio loop = "loop" preload = "auto" id = "ticking">
+          <source src="http://www.soundjay.com/clock/sounds/clock-ticking-2.mp3">
+          Your browser does not support the audio element.
+      </audio>
+
+      <audio id = "alarm">
+          <source src="http://www.soundjay.com/clock/sounds/alarm-clock-01.mp3">
+          Your browser does not support the audio element.
+      </audio>
+
     </div>
-
-    <div class = "start">
-        <button class="ctrl btn btn-success btn-lg">Start</button>
-    </div>
-
-    <div class = "length">
-       <span class="button-heading">Session Length</span>
-       <p><button class="session-min"><i class="fa fa-minus"></i></button><span class="time session-time">25</span><button class="session-plus"><i class="fa fa-plus"></i></button></p>   
-    </div>
-
-    <audio loop = "loop" preload = "auto" id = "ticking">
-        <source src="http://www.soundjay.com/clock/sounds/clock-ticking-2.mp3">
-        Your browser does not support the audio element.
-    </audio>
-
-    <audio id = "alarm">
-        <source src="http://www.soundjay.com/clock/sounds/alarm-clock-01.mp3">
-        Your browser does not support the audio element.
-    </audio>
-
-  </div>
 
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->

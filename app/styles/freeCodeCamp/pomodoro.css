@@ -1,8 +1,4 @@
-body {
-  background: #222;
-}
-
-button {
+/*button {
   background: none;
   border: none;
   outline: none;
@@ -10,7 +6,7 @@ button {
 
 #main-heading {
   text-align: center;
-  color: white;
+  color: black;
   font-family: Pacifico, serif;
   font-size: 4em;
   margin-top: 30px;
@@ -70,7 +66,7 @@ button {
   margin: 0 auto;
 }
 .button-container {
-  color: white;
+  color: black;
   text-align: center;
   width:100%;
   margin-top: 30px;
@@ -86,7 +82,7 @@ button {
 }
 .fa {
   cursor: pointer;
-  color:white;
+  color:black;
 }
 .time {
   padding: 0 10px;
@@ -94,4 +90,152 @@ button {
 }
 .start {
   margin-top: 15px;
+}*/
+
+/* Hover CSS */
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  cursor:pointer;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+body {
+  background-color:#00BFFF;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+#clock-container{
+  width:100%;
+  text-align:center;
+}
+
+#clock-container h1{
+  font-size:4em;
+  color:white;
+  padding-bottom:.5em;
+}
+
+
+#time{
+  /*font-size:5em;*/
+  color:white;
+  margin:auto;
+  width:100%;
+}
+
+
+#clock-time-wrapper{
+  font-size:5em;
+  width:33%;
+  float:left;
+  text-align:center;
+  padding-top:.25em;
+}
+
+/*#button-container{
+  width:50%;
+  float:left;
+  text-align:center;
+}*/
+
+.break-length{
+  margin-top:1em;
+  color:white;
+  float:left;
+  padding:2em;
+  width:33%;
+  text-align:center;
+}
+
+.break-length h3{
+  padding-bottom:.5em;
+}
+.break-length span{
+  padding:2em;
+  font-size:2em;
+}
+
+.break-length button{
+  color:#00BFFF;
+  background:white;
+  border-radius:.25em;
+  border:0;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .break-length{
+      width:100%;
+    }
+    #clock-time-wrapper{
+      width:100%;
+    }
+}
+
+@media screen and (max-width:320px){
+  img{
+    width:100%;
+    height:auto;
+  }
 }

@@ -1,5 +1,5 @@
 .wiki-search{
-    width:40em;
+    width:90%;
     margin:auto;
     text-align:center;
 
@@ -11,14 +11,22 @@
   margin:auto;
 }
 
-input[type=search]{
+select:focus, input:focus{
+  font-size:1em;
+}
+
+input[type=search], input[type=select]{
     width:20em;
+    font-size:1em;
+    border-radius:0;
+    -webkit-border-radius:none;
+    -webkit-appearance: none;
 }
 
-.buttons{
-    margin-top:.75em;
-}
 
+.buttons button {
+  margin-top:1em;
+}
 .fa-question-circle-o{
   margin-right:15px;
 }
@@ -53,10 +61,4 @@ input[type=search]{
   .card{
     width:90%;
   }
-}
-
-@media screen and (max-width:560px){
-    .wiki-search{
-        width:25em;
-    }
 }

@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Leonard Labita | OpenWeatherMap</title>
+    <title>Leonard Labita | Local Weather</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <!--Materialize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="../styles/freeCodeCamp/weather.css">
+
+    <!--Vendor Scripts-->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
+        <!--Material Card with more detail weather-->
+        <!--Gets location information-->
+        <div id="weather-wrapper" class="card">
+            <div id = "weather"></div>
+            <ul id="five-day"></ul>
+        </div>
     
 </body>
+    
+    <!--Vendor JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+
+
+    <!--Main JS-->
+    <script src="../scripts/freeCodeCamp/weather.js"></script>
 </html>
