@@ -1,7 +1,3 @@
-body {
-  background-color: #D5F0FF;
-}
-
 ul {
   list-style: none;
   padding-left: 0;
@@ -10,27 +6,37 @@ ul {
 .wrapper {
   width: 304.3px;
   margin: 10px auto;
-  border-top: 1px solid #88D6FF;
 }
+
+#logo{
+  width:304.3px;
+  padding-bottom:.5em;
+}
+
+#logo img{
+  width:100%;
+  height:auto;
+}
+
 .tabs li {
   float: left;
   font-size: 16px;
   padding: 1em 2em;
-  background-color: #88D6FF;
+  background-color: #6441A4;
   color: #fff;
   cursor: pointer;
   position: relative;
 }
 
 .tabs li + li {
-  border-left: 1px solid #D5F0FF;
+  border-left: 1px solid #ddd;
 }
 
 .search-box, .streamers {
   background-color: #fff;
   padding: 1em 1em 1.3em 1em;
-  border-left: 1px solid #88D6FF;
-  border-right: 1px solid #88D6FF;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
@@ -48,7 +54,7 @@ ul {
   left: 40px;
 }
 
-.search:focus, .serach:active {
+.search:focus, .search:active {
   outline: none;
 }
 .search-box span {
@@ -59,7 +65,7 @@ ul {
 }
 
 .streamers {
-  border-bottom: 1px solid #88D6FF;
+  border-bottom: 1px solid #ddd;
 }
 
 .streamer-info {
@@ -78,7 +84,7 @@ ul {
   float: left;
   font-size: 16px;
   line-height: 50px;
-  color: #88D6FF;
+  color: #6441A4;
 }
 
 .user-status {
@@ -109,7 +115,7 @@ top: 100%;
 left: 30.85px;
 width: 0;
 height: 0;
-border-color: #88D6FF transparent transparent transparent;
+border-color: #6441A4 transparent transparent transparent;
 border-style: solid;
 border-width: 10px;
 }

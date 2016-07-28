@@ -122,11 +122,7 @@ $(document).ready(function(){
 
 		function playTicking(){
 			var ticking = document.getElementById("ticking");
-			var buffer = .44
-			if(currentTime > duration - buffer){
-				currentTime = 0;
-				ticking.play();
-			}
+			ticking.play();
 		}
 
 		function pauseTicking(){
