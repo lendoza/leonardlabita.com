@@ -16,14 +16,15 @@ $(document).ready(function(){
           success: function(weather) {
             var fiveDay = "";
             var forecast = weather.forecast.simpleforecast.forecastday;
+            var date = weather.forecast.txt_forecast.date;
             var location = weather.location;
             
             html = '<h1>' + location.city + ', ' + location.state + '</h1>';
+            html += '<img src=' + forecast[0].icon_url + ">";
             html += '<h2>' + forecast[0].high.fahrenheit + '&deg;' + 'F' + '</h2>';
-            // html += '<ul><li>' + forecast[0].date.monthname + ' ' + forecast[0].date.day + ', ' + forecast[0].date.year + '</li>';
-            html += '<ul><li>' + 'Last Updated: ' + forecast.date + '</li>';
-            html += '<li class="currently">' + forecast[0].conditions + '</li>';
-            html += '<li id="change">' + forecast[0].high.celsius + '&deg;C</li></ul>';
+            html += '<ul><li>' + 'Last Updated: ' + date + '</li>';
+            html += '<li>' + forecast[0].conditions + '</li>';
+            html += '<li>' + forecast[0].high.celsius + '&deg;C</li></ul>';
             
             for(var i = 1; i < 6; i++) {
               fiveDay += '<li><h6>' + forecast[i].date.weekday_short + '</h6>';
