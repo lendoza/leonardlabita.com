@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,300);
+
+#tic-tac-header{
+  text-align:center;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size:3em;
+  font-style:bold;
+}
+
+.board-default, .board, .difficulty {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.board-default:before, .board:before, .difficulty:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+}
+
+@media (min-width: 450px) {
+  .board-default, .board, .difficulty {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.board {
+  position: relative;
+  margin: 40px auto;
+}
+
+.board-wrapper {
+  display: inline-flex;
+}
+
+.board-row {
+  display: block;
+}
+
+.board-slot-hidden {
+  display: none;
+}
+
+.board-slot {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 5px;
+}
+@media (min-width: 450px) {
+  .board-slot {
+    height: 110px;
+    width: 110px;
+  }
+}
+.board-slot:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.board-slot:active {
+  border: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.difficulty {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  margin-top:2em;
+  z-index: 2;
+  text-align: center;
+  background-color: #00C853;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.difficulty-header{
+  color:#FFF;
+  font-family: 'PT Sans', arial, sans-serif;
+}
+
+.difficulty-button{
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  font-family: 'PT Sans', arial, sans-serif;
+  font-size: 1em;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+  text-transform: uppercase;
+}
+.difficulty-button:before {
+  z-index: -2;
+  transition: all 250ms ease-out;
+  bottom: 15px;
+  width: 50%;
+  height: 20%;
+  box-shadow: 0 10px 30px rgba(31, 31, 31, 0.5);
+  left: 8px;
+  transform: rotate(-3deg);
+}
+.difficulty-button:after,{
+  transform: rotate(3deg);
+}
+
+.difficulty-button:hover{
+  cursor: pointer;
+}
+
+.difficulty-button:hover:before{
+  box-shadow: 0 15px 12px rgba(31, 31, 31, 0.7);
+}
+
+@media (min-width: 450px) {
+  .difficulty-button{
+    padding: 10px 40px;
+    font-size: 2em;
+    width: 200px;
+  }
+}
+
+.nought:before, .cross:before {
+  font-size: 3em;
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  cursor: default;
+}
+@media (min-width: 450px) {
+  .nought:before, .cross:before {
+    font-size: 5em;
+    top: 15px;
+  }
+}
+
+.nought:before {
+  content: "O";
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.cross:before {
+  content: "X";
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.computer-color {
+  color: #F44336;
+}
+
+.player-color {
+  color: #2196F3;
+}
+
+/* Animations */
+.slideUp {
+  animation: slideUp 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.slideDown {
+  animation: slideDown 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-525px);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-525px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -19,7 +19,7 @@ $(document).ready(function(){
             var date = weather.forecast.txt_forecast.date;
             var location = weather.location;
             
-            html = '<h1>' + location.city + ', ' + location.state + '</h1>';
+            var html = '<h1>' + location.city + ', ' + location.state + '</h1>';
             html += '<img src=' + forecast[0].icon_url + ">";
             html += '<h2>' + forecast[0].high.fahrenheit + '&deg;' + 'F' + '</h2>';
             html += '<ul><li>' + 'Last Updated: ' + date + '</li>';

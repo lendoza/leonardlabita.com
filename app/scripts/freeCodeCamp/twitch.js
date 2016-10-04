@@ -18,8 +18,8 @@ $(document).ready(function(){
     	for (var i = 0; i < streams.length; i++) {
         		(function(i) {
           		streamerId = streams[i];
-          		channelsURL = 'https://api.twitch.tv/kraken/channels/' + streamerId + '?callback=?';
-          		streamsURL = 'https://api.twitch.tv/kraken/streams/' + streamerId + '?callback=?';
+          		channelsURL = 'https://api.twitch.tv/kraken/channels/' + streamerId + '?client_id=k6q07brlqvoawjwtjc4q96p3si3z7sl&callback=?';
+          		streamsURL = 'https://api.twitch.tv/kraken/streams/' + streamerId + '?client_id=k6q07brlqvoawjwtjc4q96p3si3z7sl&callback=?';
           
           	$.getJSON(channelsURL, function(channelResults) {        
             		$('#' + streams[i] + '-name').html(channelResults.display_name);

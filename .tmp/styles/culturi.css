@@ -1,0 +1,11 @@
+.about-image{
+    width:50%;
+}
+
+.about-description{
+    width:50%;
+}
+
+#section1, #section2, #section3, #section4 {
+    width:100%;
+}

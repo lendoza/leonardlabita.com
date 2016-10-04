@@ -2,6 +2,7 @@
 	width:100%;
 	text-align:center;
     margin-top:1em;
+    margin-bottom:2em;
 }
 
 #randomImg{
@@ -11,8 +12,9 @@
 #randomQuotes{
     font-size:1.25em;
     padding-top:2em;
-    width:50%;
+    width:90%;
     margin:auto;
+    max-width:500px;
 }
 
 #source{
