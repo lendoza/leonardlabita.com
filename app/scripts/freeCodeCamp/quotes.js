@@ -59,7 +59,7 @@ $(document).ready(function(){
 
         var randomNum = Math.floor(Math.random() * (quotesSrc.length));
         var img = $('#img').attr("src", quotesSrc[randomNum].img);
-        var randomQuote = $('#randomQuotes').html(quotesSrc[randomNum].quote)
+        var randomQuote = $('#randomQuotes').html(quotesSrc[randomNum].quote);
         var source = $('#source').html(quotesSrc[randomNum].source);
     }
 

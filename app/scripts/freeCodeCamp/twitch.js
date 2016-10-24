@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	(function(){
-    var streams = ["FreeCodeCamp", "DevWars", "MedryBW", "storbeck", "terakilobyte", "habathcx","RobotCaleb","thomasballinger","noobs2ninjas","beohoff"]
+    var streams = ["FreeCodeCamp", "DevWars", "MedryBW", "storbeck", "terakilobyte", "habathcx","RobotCaleb","thomasballinger","noobs2ninjas","beohoff"];
 
     var createStreamerList = function(streams){
     	var streamerItem;
@@ -21,26 +21,26 @@ $(document).ready(function(){
           		channelsURL = 'https://api.twitch.tv/kraken/channels/' + streamerId + '?client_id=k6q07brlqvoawjwtjc4q96p3si3z7sl&callback=?';
           		streamsURL = 'https://api.twitch.tv/kraken/streams/' + streamerId + '?client_id=k6q07brlqvoawjwtjc4q96p3si3z7sl&callback=?';
           
-          	$.getJSON(channelsURL, function(channelResults) {        
-            		$('#' + streams[i] + '-name').html(channelResults.display_name);
-            	if (channelResults.logo !== null) {
-            		$('#' + streams[i] + '-image img').attr("src", channelResults.logo);
-            	}
+            	$.getJSON(channelsURL, function(channelResults) {        
+              		$('#' + streams[i] + '-name').html(channelResults.display_name);
+              	if (channelResults.logo !== null) {
+              		$('#' + streams[i] + '-image img').attr("src", channelResults.logo);
+              	}
 
-            	if (channelResults.status !== null) {
-              	if (channelResults.status.length > 36) {
-              	var clippedStatus = channelResults.status.slice(0,34) + '...';
-              	$('#' + streams[i] + '-description').html(clippedStatus).hide();
+              	if (channelResults.status !== null) {
+                	if (channelResults.status.length > 36) {
+                  	var clippedStatus = channelResults.status.slice(0,34) + '...';
+                  	$('#' + streams[i] + '-description').html(clippedStatus).hide();
+                  }
+                } 
+              });
+
+            $.getJSON(streamsURL, function(streamResults) {
+              if (streamResults.stream !== null) {
+                $('#' + streams[i] + '-status span').removeClass('glyphicon glyphicon-remove').addClass('glyphicon glyphicon-ok');
+                $('#' + streams[i] + '-description').show();
               }
-            } 
-          });
-
-          $.getJSON(streamsURL, function(streamResults) {
-            if (streamResults.stream !== null) {
-              $('#' + streams[i] + '-status span').removeClass('glyphicon glyphicon-remove').addClass('glyphicon glyphicon-ok');
-              $('#' + streams[i] + '-description').show();
-            }
-          });
+            });
 
         	})(i);
       }
@@ -74,15 +74,15 @@ $(document).ready(function(){
     var searchBar = function() {
       	$('#search').keyup(function(){
          		var valThis = $(this).val().toLowerCase();
-          	if(valThis == ""){
+          	if(valThis === ""){
               	$('#streamerList > li').show();           
           	} 
           	else {
               	$('#streamerList > li').each(function(){
                   	var text = $(this).attr('id').toLowerCase();
                   	(text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
-          		});
-         		};
+          		  });
+         		}
       	});
     	};
 
@@ -91,6 +91,6 @@ $(document).ready(function(){
 	tabSwitcher();
 	searchBar();
 
-  })()
+  })();
 	
 });

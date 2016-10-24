@@ -44,7 +44,7 @@ $(document).ready(function() {
 
                 var pos = Number($(this).attr("id"));
 
-                if (GAMEBOARD[pos] == "") {
+                if (GAMEBOARD[pos] === "") {
                     $(this).addClass(PLAYER_CLASS + ' player-color');
                     GAMEBOARD[pos] = "X";
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
         function getAvailableMoves(state) {
             var all_moves = Array.apply(null, {length: NUM_SQUARES}).map(Number.call, Number);
-            return all_moves.filter(function(i) { return state[i] == ""; });
+            return all_moves.filter(function(i) { return state[i] === ""; });
         }
 
         /* Given a state of the board, returns true if the board is full */
@@ -105,7 +105,7 @@ $(document).ready(function() {
             for (var i = 0; i < WIN_COMBOS.length; i++) {
                 win = true;
                 for (var j = 0; j < WIN_COMBOS[i].length; j++) {
-                    if (state[WIN_COMBOS[i][j]] != player) {
+                    if (state[WIN_COMBOS[i][j]] !== player) {
                         win = false;
                     }
                 }
@@ -142,7 +142,7 @@ $(document).ready(function() {
                 min_score,
                 scores = [],
                 moves = [],
-                opponent = (player == "X") ? "O" : "X",
+                opponent = (player === "X") ? "O" : "X",
                 successors = getAvailableMoves(state);
 
             for (var s in successors) {
@@ -153,7 +153,7 @@ $(document).ready(function() {
                 moves.push(successors[s]);
             }
 
-            if (player == "X") {
+            if (player === "X") {
                 AI_MOVE = moves[0];
                 max_score = scores[0];
                 for (var s in scores) {

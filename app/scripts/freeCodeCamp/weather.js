@@ -3,8 +3,8 @@ $(document).ready(function(){
   var Weather = (function(){
       var site = "https://api.wunderground.com/api/";
       var API_KEY = "ee040adfdaed58a4";
-      var tenDay = "/geolookup/forecast10day/q/autoip"
-      var format = ".json"
+      var tenDay = "/geolookup/forecast10day/q/autoip";
+      var format = ".json";
       var url = site + API_KEY + tenDay + format;
 
      $.ajax({

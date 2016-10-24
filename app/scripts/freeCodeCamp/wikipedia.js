@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('input, select, textarea').on('focus blur', function(event) {
-    $('meta[name=viewport]').attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
+    $('meta[name=viewport]').attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type === 'blur' ? 10 : 1));
   });
 
   var Wiki = (function(){
@@ -43,7 +43,7 @@ $(document).ready(function(){
     }
 
     $('input').keypress(function(e) {
-      if (e.which == 13) {
+      if (e.which === 13) {
         $('#search-button').click();
       }
     });

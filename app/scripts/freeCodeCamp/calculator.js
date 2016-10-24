@@ -99,6 +99,6 @@ $(document).ready(function(){
 			// $(this).fadeOut(100).fadeIn(100);
 		}
 
-	})()
+	})();
 	
 });
