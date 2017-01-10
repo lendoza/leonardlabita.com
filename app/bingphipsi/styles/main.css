@@ -1,0 +1,750 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+html {
+    min-height:100%;
+    margin:0;
+    padding:0;
+}
+#wrapper {
+    flex:1;
+    -webkit-flex:1;
+    min-width:1100px;
+}
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height:100vh;
+    -webkit-flex-direction:column;
+    -webkit-display:flex;
+    -webkit-min-height:100vh;
+}
+
+header {
+    height:100px;
+    width:100%;
+    background:black;
+    margin:0 auto;
+
+}
+
+.logo{
+    padding-left:10px;
+    float:left;
+    padding-top:5px;
+}
+
+.chapter-logo {
+    float:right;
+    padding-top:15px;
+    padding-right:10px;
+}
+
+/* Start MENU styling*/
+
+.menu{
+    margin:0 auto;
+    padding:0 ;
+    text-align:center;
+    clear:both
+}
+
+ul.menu {
+    background-image: -o-linear-gradient(bottom, #ACB5B5 0%, #E2F0EA 100%);
+    background-image: -moz-linear-gradient(bottom, #ACB5B5 0%, #E2F0EA 100%);
+    background-image: -webkit-linear-gradient(bottom, #ACB5B5 0%, #E2F0EA 100%);
+    background-image: -ms-linear-gradient(bottom, #ACB5B5 0%, #E2F0EA 100%);
+    background-image: linear-gradient(to bottom, #ACB5B5 0%, #E2F0EA 100%);
+    height: 40px;
+    width: 100%;
+    border-left:solid 1px #22674A;
+    white-space: nowrap;
+    text-align:center;
+}
+
+ul.menu > li {
+    position: relative;
+    display:inline-block;
+    list-style:none;
+    text-align:center;
+    width:20%;
+    border-style:1px #22674A;
+    font-family: "Open Sans", sans-serif;
+    font-weight:700;
+}
+
+/*START sub menu styling*/
+
+ul.menu li:first-child a {
+    border-left:none;
+}
+
+ul.menu ul li:first-child {
+    border-bottom:solid 1px #22674A;
+}
+
+ul.menu ul li:nth-child(2) {
+    border-bottom:solid 1px #22674A;
+}
+
+ul.menu ul li:last-child{
+    border-bottom:none;
+}
+
+ul.menu ul li a {
+    border:none;
+}
+ul.menu ul {
+    background-image: -o-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -moz-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -webkit-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: -ms-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: linear-gradient(to bottom, #E2F0EA 0%, #ACB5B5 100% );
+    position: absolute;
+    padding:0;
+    border-left:none;
+    border:solid 1px #22674A;
+    width:100%;
+    text-align:center;
+    display:none;
+
+}
+ul.menu a {
+    cursor: pointer;
+    display: block;
+    color: #22674A;
+    line-height: 40px;
+    text-decoration:none;
+    font-weight:bold;
+    border-left:solid 1px #22674A; 
+}
+ul.menu li {
+    list-style: none;
+}
+
+/* End MENU styling */
+
+/* Banner Styling*/
+.index {
+    height:400px;
+    background-image: url("http://i.imgur.com/RI05og7.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 400px;
+}
+
+.letter{
+    width:460px;
+    height:250px;
+    margin-left:20px;
+    line-height:1.75em;
+    font-family:"Open Sans", sans-serif
+}
+
+h4 {
+    color:#22674A;
+    font-family:"Open Sans", sans-serif;
+    font-weight:700;
+}
+
+/*End of Banner Styling*/
+
+/*News Styling*/
+.news-section {
+    height:265px;
+    margin-bottom:25px;
+    width:100%;
+}
+
+.news  {
+    width:812px;
+    height:300px;
+    margin:0 auto;
+}
+.greekgod {
+    width:250px;
+    height:230px;
+    border:solid 1px black;
+    text-align:center;
+    background-image: -o-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -moz-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -webkit-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: -ms-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: linear-gradient(to bottom, #E2F0EA 0%, #ACB5B5 100% );
+    line-height:1.5em;
+    font-family:"Open Sans", sans-serif;
+    float:left;
+    margin-top:30px;
+    margin-right:30px;
+    padding:5px;
+}
+
+.donate-button {
+    width:150px;
+    height:40px;
+    border:3px solid black;
+    background:#22674A;
+    border-radius:5px;
+    color:white;
+    text-align:center;
+    padding-top:7px;
+    text-decoration:none;
+    margin-left:45px;
+    font-family:"Open Sans", sans-serif;
+}
+.kovacs {
+    width:250px;
+    height:230px;
+    border:solid 1px black;
+    background-image: -o-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -moz-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -webkit-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: -ms-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: linear-gradient(to bottom, #E2F0EA 0%, #ACB5B5 100% );
+    text-align:center;
+    line-height:1.5em;
+    padding:5px;
+    font-family:"Open Sans", sans-serif;
+    float:left;
+    margin-top:30px;
+}
+
+ .sign-up {
+    width:150px;
+    height:40px;
+    border:3px solid black;
+    background:#22674A;
+    border-radius:5px;
+    color:white;
+    text-align:center;
+    padding-top:7px;
+    text-decoration:none;
+    margin-left:40px;
+    font-family:"Open Sans", sans-serif
+}
+
+.social{
+    float:left;
+    border:solid 1px black;
+    position:relative;
+    text-align:center;
+    width:250px;
+    height:230px;
+    margin-right:30px;
+    background-image: -o-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -moz-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -webkit-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: -ms-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: linear-gradient(to bottom, #E2F0EA 0%, #ACB5B5 100% );
+    padding:5px;
+    font-family:"Open Sans", sans-serif;
+    margin-top:30px;
+    
+}
+
+.social a {
+    padding:15px;
+}
+
+.social h4 {
+    padding-bottom:20px;
+    padding-top:none;
+
+}
+/*End of news styling*/
+
+/* History page styling */
+.history  {
+    width:100%;
+    height:700px;
+    font-family:"Open Sans", sans-serif;
+    line-height:2em;
+    margin:auto;
+}
+
+.history h3 {
+    color:#22674A;
+    text-align:center;
+    font-family:"Open Sans", sans-serif;
+    font-weight:700;
+    padding-top:15px;
+}
+
+.national-history {
+    width:1050px;
+    margin:auto;
+    height:350px;
+    padding-top:50px;
+}
+.national-history-text {
+   float:left;
+   width:625px;
+}
+
+.founders {
+    float:left;
+    width:400px;
+}
+
+.og {
+    width:1050px;
+    margin:auto;
+    height:300px;
+}
+
+.og-picture {
+    float:left;
+    width:400px;
+}
+
+.chapter-history{
+   float:left;
+   width:625px;
+}
+
+/* End of HISTORY page styling */
+
+/*Kovacs Page Styling */
+.kovacs-walk {
+    width:1050px;
+    height:950px;
+    line-height:2em;
+    font-family:"Open Sans", sans-serif;
+    padding-top:20px;
+    margin:0 auto;
+    margin-bottom:75px;
+
+}
+
+.kovacs-p {
+    width:600px;
+    float:right;
+    margin-top:7px;
+    padding-left:5px;
+}
+
+.kovacs-pics {
+    width:400px;
+    margin-left:20px;
+    padding-top:40px;
+}
+
+.sign-up-big {
+    width:300px;
+    height:50px;
+    border:3px solid black;
+    background:#22674A;
+    border-radius:5px;
+    color:white;
+    text-align:center;
+    margin-top:60px;
+    padding-top:7px;
+    text-decoration:none;
+    margin-left:150px
+}
+
+/*End of kovacs page styling*/
+
+/*Brothers page styling*/
+.eboard {
+    height:1400px;
+    width:100%;
+}
+.eboard h3 {
+    margin-top:25px;
+}
+
+#eboard-pictures {
+    height:900px;
+    font-family:"Open Sans", sans-serif;
+
+}
+#row1-eboard {
+    width:750px;
+    height:275px;
+    margin:0 auto;
+    text-align:center;
+
+}
+
+#row1-eboard div {
+    float:left;
+    text-align:center;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+.eboard h5 {
+    font-family:"Open Sans", sans-serif;
+    color:#22674A;
+    font-weight:700;
+}
+
+#row2-eboard {
+    width:750px;
+    height:275px;
+    margin:0 auto;
+    text-align:center;
+}
+#row2-eboard div {
+    float:left;
+    text-align:center;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+#row3-eboard {
+    width:750px;
+    height:275px;
+    margin:0 auto;
+    text-align:center;
+}
+
+#row3-eboard div {
+    float:left;
+    text-align:center;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+.roster {
+    margin:0 auto;
+    text-align:center;
+
+}
+
+/*End of brothers page styling*/
+
+/*Greekgod page styling*/
+
+.greekgod-page {
+    height:100%;
+    margin-top:25px;
+    margin-bottom:100px;
+    width:100%;
+}
+
+.greek-god {
+    width:1000px;
+    height:500px;
+    font-family:"Open Sans", sans-serif;
+    margin:auto;
+    margin-top:25px;
+}
+.greek-god div {
+    float:left;
+}
+.greek-god h3 {
+    padding-bottom:25px;
+}
+
+#greek-god-description {
+    width:650px;
+    line-height:2em;
+    margin-left:40px;
+    margin-top:50px;
+}
+
+.donate-button-big {
+    width:250px;
+    height:40px;
+    border:3px solid black;
+    background:#22674A;
+    border-radius:5px;
+    color:white;
+    text-align:center;
+    padding-top:5px;
+    text-decoration:none;
+    margin-left:200px;
+    margin-top:50px;
+    font-family:"Open Sans", sans-serif;
+}
+.halloffame{
+    height:1300px;
+}
+#row1-greekgod {
+    width:900px;
+    height:275px;
+    margin:0 auto;
+    text-align:center;
+
+}
+
+#row1-greekgod div {
+    float:left;
+    text-align:center;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+.halloffame h5 {
+    font-family:"Open Sans", sans-serif;
+    color:#22674A;
+    font-weight:700;
+}
+
+#row2-greekgod {
+    width:900px;
+    height:275px;
+    margin:0 auto;
+    text-align:center;
+}
+#row2-greekgod div {
+    float:left;
+    text-align:center;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+#row3-greekgod {
+    width:900px;
+    height:275px;
+    margin:0 auto;
+    text-align:center;
+}
+
+#row3-greekgod div {
+    float:left;
+    text-align:center;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+#row4-greekgod {
+    width:900px;
+    height:275px;
+    margin:0 auto;
+    text-align:center;
+
+}
+
+#row4-greekgod div {
+    float:left;
+    text-align:center;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+
+/*End of GREEKGOD page styling*/
+
+/*Membership page styling*/
+
+.membership {
+    height:100%;
+    font-family:"Open Sans", sans-serif;
+    margin-bottom:25px;
+}
+.membership h3 {
+    margin-bottom:15px;
+}
+.membership h5 {
+    font-family:"Open Sans", sans-serif;
+    color:#22674A;
+    font-weight:700;
+    text-align:center;
+}
+
+#row1-membership{
+    width:1000px;
+    height:400px;
+    margin:0 auto;
+}
+
+#row1-membership div {
+    float:left;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+#brotherhood-info {
+    width:500px;
+    line-height:2.5em;
+}
+
+#row2-membership {
+    width:1000px;
+    height:350px;
+    margin:0 auto;
+}
+#row2-membership div {
+    float:left;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+#social-info {
+    width:500px;
+    line-height:2.5em;
+}
+
+#row3-membership {
+    width:1000px;
+    height:350px;
+    margin:0 auto;
+}
+
+#row3-membership div {
+    float:left;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+}
+
+#scholastics-info {
+    width:500px;
+    line-height:2.5em;
+}
+
+#row4-membership {
+    width:1000px;
+    height:350px;
+    margin:0 auto;
+
+}
+
+#row4-membership div {
+    float:left;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+    margin-bottom:25px;
+}
+
+#involvement-info {
+    width:500px;
+    line-height:2.5em;
+}
+
+#row5-membership {
+    width:1000px;
+    height:350px;
+    margin:0 auto;
+
+}
+
+#row5-membership div {
+    float:left;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+    margin-bottom:25px;
+}
+
+#leadership-info {
+    width:500px;
+    line-height:2.5em;
+}
+
+#row6-membership {
+    width:1000px;
+    height:350px;
+    margin:0 auto;
+
+}
+
+#row6-membership div {
+    float:left;
+    padding-right:20px;
+    padding-left:25px;
+    display:inline-block;
+    padding-top:15px;
+    margin-bottom:25px;
+}
+
+#alumni-info {
+    width:500px;
+    line-height:2.5em;
+}
+
+/*End of membership page styling*/
+
+/*Contact page styling*/
+
+.contact {
+    height:800px;
+    margin-bottom:50px;
+}
+.chapter-email {
+    height:400px;
+    border:solid 1px black;
+    background-image: -o-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -moz-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -webkit-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: -ms-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: linear-gradient(to bottom, #E2F0EA 0%, #ACB5B5 100% );
+    text-align:center;
+    margin-left:50px;
+    line-height:1.5em;
+    padding:5px;
+    padding-bottom:10px;
+    font-family:"Open Sans", sans-serif;
+    width:400px;
+    margin:20px auto;
+}
+
+.links {
+    width:400px;
+    height:350px;
+    border:solid 1px black;
+    background-image: -o-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -moz-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100% );
+    background-image: -webkit-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: -ms-linear-gradient(bottom, #E2F0EA 0%, #ACB5B5 100%);
+    background-image: linear-gradient(to bottom, #E2F0EA 0%, #ACB5B5 100% );
+    text-align:center;
+    vertical-align:top;
+    margin-left:50px;
+    line-height:2em;
+    padding:5px;
+    padding-bottom:10px;
+    font-family:"Open Sans", sans-serif;
+    margin-top:30px;
+    margin:0 auto;
+}
+
+/*end of contact page styling*/
+
+.footer {
+height:50px;
+width:100%;
+min-width:1100px;
+background-color:black;
+}
+
+.footer p {
+    text-align:center;
+    color:white;
+    font-size:13px;
+    font-family:"Open Sans", sans-serif;
+    padding-top:15px;
+}
+
+.inner-footer {
+    width:100%;
+}
