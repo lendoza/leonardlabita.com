@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.7.2",
+    "grunt-babel": "^7.0.0",
     "grunt-bower-install": "~1.4.0",
     "grunt-concurrent": "~0.5.0",
     "grunt-contrib-clean": "~0.5.0",
