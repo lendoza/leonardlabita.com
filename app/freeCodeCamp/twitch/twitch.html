@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Leonard Labita | Quotes</title>
+    <title>Leonard Labita | Twitch Status</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -12,12 +12,13 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/quotes.css">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="twitch.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
   </head>
@@ -25,31 +26,36 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="quotes">
+  <div class="wrapper">
 
-        <h1>Random Quote Generator</h1>
+    <nav class="clearfix">
+      <div id="logo">
+        <img src="../images/twitch/twitch.png"/>
+      </div>
+      <ul class="tabs">
+        <li id="tabAll" class="arrow">All</li>
+        <li id="tabOnline">Online</li>
+        <li id="tabOffline">Offline</li>
+      </ul>
+    </nav>
 
-        <div class ="button">
-            <button id="generator" class="btn btn-info">Generate a Random Quote!</button>
-        </div>
+    <section class="search-box">
+      <div class="outer-search-box">
+        <input type="search" class="search" id="search" />
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </div>
+    </section>
 
-        <div id ="quote-container">
-        
-            <div id ="randomImg">
-                <img id="img" src=""/>
-            </div>
-        
-            <div id="randomQuotes"></div>
-            <div id="source"></div>
+    <section class="streamers">
+      <ul id="streamerList"></ul>  
+    </section>
 
-        </div>
-    
-    </div>
+  </div>
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -64,7 +70,7 @@
     </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/quotes.js"></script>
+        <script src="twitch.js"></script>
         <!-- endbuild -->
 </body>
 </html>

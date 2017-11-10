@@ -7,12 +7,12 @@ $(document).ready(function(){
             {
                 "quote": "Give even if you only have a little",
                 "source": "Buddha",
-                "img": "images/quotes/buddha.jpg"
+                "img": "../../images/quotes/buddha.jpg"
             },
             {
                 "quote": "I don't want to be at the mercy of my emotions. I want to use them, to enjoy them, and to dominate them.",
                 "source": "The Picture of Dorian Gray, by Oscar Wilde",
-                "img": "images/quotes/wilde.jpg"
+                "img": "../images/quotes/wilde.jpg"
             },
             {
                 "quote": "When we are no longer able to change a situation, we are challenged to change ourselves.",
@@ -22,37 +22,37 @@ $(document).ready(function(){
             {
                 "quote": "Every man I meet is my superior in some way. In that, I learn of him.",
                 "source": "Letters and Social Aims, by Ralph Waldo Emerson",
-                "img": "images/quotes/emerson.jpg"
+                "img": "../images/quotes/emerson.jpg"
             },
             {
                 "quote": "And now that you don't have to be perfect, you can be good.",
                 "source": "East of Eden, by John Steinbeck",
-                "img": "images/quotes/steinbeck.jpg"
+                "img": "../images/quotes/steinbeck.jpg"
             },
             {
                 "quote": "You have power over your mind - not outside events. Realize this, and you will find strength.",
                 "source": "Meditations, by Marcus Aurelius",
-                "img": "images/quotes/aurelius.jpg"
+                "img": "../images/quotes/aurelius.jpg"
             },
             {
                 "quote": "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.",
                 "source": "The Rebel, by Albert Camus",
-                "img": "images/quotes/camus.jpg"
+                "img": "../images/quotes/camus.jpg"
             },
             {
                 "quote": "Any fool can criticize, complain, and condemn—and most fools do. But it takes character and self-control to be understanding and forgiving.",
                 "source":"How To Win Friends and Influence People, by Dale Carnegie",
-                "img": "images/quotes/carnegie.jpg"
+                "img": "../images/quotes/carnegie.jpg"
             },
             {
                 "quote": "Every adversity, every failure, every heartbreak, carries with it the seed of an equal or greater benefit.",
                 "source": "Think and Grow Rich, by Napoleon Hill",
-                "img": "images/quotes/hill.jpg"
+                "img": "../images/quotes/hill.jpg"
             },
             {
                 "quote": "I took a walk in the woods and came out taller than the trees",
                 "source": "Walden, by Henry David Thoreau",
-                "img": "images/quotes/thoreau.jpg"
+                "img": "../images/quotes/thoreau.jpg"
             }
 
         ];
